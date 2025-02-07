@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import { toast } from "react-hot-toast"
+import Link from "next/link"
 
 export default function LoginPage() {
   const [email, setEmail] = useState("")
@@ -64,8 +65,8 @@ export default function LoginPage() {
             </div>
           </CardContent>
           <CardFooter>
-            <Button type="submit" className="w-full">
-              Login
+            <Button type="submit" className="w-full bg-teal-600 hover:bg-red-600">
+            <Link href='/dashboard'>Login</Link>
             </Button>
           </CardFooter>
         </form>
