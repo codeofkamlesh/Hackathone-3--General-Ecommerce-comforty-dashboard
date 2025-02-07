@@ -64,11 +64,13 @@ export default function LoginPage() {
               </div>
             </div>
           </CardContent>
+          <Link href='/dashboard'>
           <CardFooter>
             <Button type="submit" className="w-full bg-teal-600 hover:bg-red-600">
-            <Link href='/dashboard'>Login</Link>
+            Login
             </Button>
           </CardFooter>
+            </Link>
         </form>
       </Card>
     </div>

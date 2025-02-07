@@ -36,10 +36,12 @@ export function Sidebar() {
         </ul>
       </nav>
       <div className="p-4">
+      <Link href='/login'>
         <Button variant="ghost" className="w-full justify-start bg-white text-black hover:bg-red-600 hover:text-white">
           <LogOut className="mr-2 h-5 w-5" />
-          <Link href='/login'>Logout</Link>
+          Logout
         </Button>
+        </Link>
       </div>
     </div>
   )

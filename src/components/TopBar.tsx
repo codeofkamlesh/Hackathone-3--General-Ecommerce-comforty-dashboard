@@ -1,5 +1,6 @@
 // import { Notifications } from "  @/components/Notifications"
 // import { UserNav } from "@/components/UserNav"
+import Image from 'next/image';
 
 
 export function TopBar() {
@@ -10,7 +11,11 @@ export function TopBar() {
       <div className="flex items-center space-x-4">
         {/* <Notifications /> */}
         {/* <UserNav /> */}
-       
+       <Image
+       src="/logoicon.png"
+       alt="logo"
+       width={40}
+       height={40} />
       </div>
     </header>
   )
